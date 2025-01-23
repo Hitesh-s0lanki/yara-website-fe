@@ -1,0 +1,105 @@
+import { cn } from "@/lib/utils";
+import { Beau_Rivage } from "next/font/google";
+import Image from "next/image";
+
+const beauRivage = Beau_Rivage({
+  weight: "400", // Adjust if more weights are available
+  subsets: ["latin"], // Specify subsets if needed
+});
+
+const data = [
+  {
+    title: "The Ambitious Go-Getter",
+    description:
+      "I want to feel like the best version of myself, no matter where I go or what I do",
+    image: "/our-customer/ambitious.svg",
+  },
+  {
+    title: "The Empowered Trailblazer",
+    description:
+      "I want something that feels good and lets me be, while I take care of everyone and everything else",
+    image: "/our-customer/enpowered.svg",
+  },
+  {
+    title: "The Fearless Trailblazer",
+    description:
+      "I’ve grown into who I am, I know what feels right, and I choose authenticity and expression on my own terms",
+    image: "/our-customer/fearless.svg",
+  },
+  {
+    title: "The Ageless Muse",
+    description:
+      "I’ve lived. I know what I want and I choose my comfort and style on my own terms",
+    image: "/our-customer/ageless.svg",
+  },
+];
+
+const OurCustomer = () => {
+  return (
+    <div className="w-full py-20 px-5 flex flex-col justify-center items-center gap-10 md:gap-20 lg:gap-20">
+      <h1
+        className={cn(
+          "text-4xl md:text-5xl lg:text-5xl text-center",
+          beauRivage.className
+        )}
+      >
+        Our Customers
+      </h1>
+      <div className="grid grid-cols-2 md:flex lg:flex justify-center items-center gap-5">
+        {data.map((item, index) => (
+          <ImageCard key={index} {...item} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const ImageCard = ({
+  title,
+  description,
+  image,
+}: {
+  title: string;
+  description: string;
+  image: string;
+}) => {
+  return (
+    <div className=" h-[244px] md:h-[400px] lg:h-[400px] w-full md:w-[223px] lg:w-[223px] relative group md:hover:w-[466px] lg:hover:w-[466px] transition-all duration-1000 ">
+      <div
+        className="absolute h-[244px] md:h-[400px] lg:h-[400px] w-full flex flex-col gap-1 justify-end text-center p-5  rounded-xl z-[99999] transition-all duration-1000 ease-in-out"
+        style={{
+          background:
+            "linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1))",
+        }}
+      >
+        <h2
+          className={cn(
+            " absolute text-white text-start text-md md:text-lg lg:text-lg  font-semibold translate-y-0 lg:group-hover:translate-y-[-50px] md:lg:group-hover:translate-y-[-50px] transition-transform ease-in-out"
+          )}
+        >
+          {title}
+        </h2>
+        <p
+          className={cn(
+            "text-white text-md text-start opacity-0 translate-y-5 md:group-hover:opacity-100 lg:group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-1000 ease-in-out"
+          )}
+          style={{ transitionDuration: "3000ms" }}
+        >
+          {description}
+        </p>
+      </div>
+      <Image
+        src={image}
+        alt={title}
+        width={223}
+        height={400}
+        className={cn(
+          " h-[244px] md:h-[400px] lg:h-[400px] w-full rounded-xl shadow-sm border object-cover ",
+          title !== "The Fearless Trailblazer" && "object-center"
+        )}
+      />
+    </div>
+  );
+};
+
+export default OurCustomer;
