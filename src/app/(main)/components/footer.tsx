@@ -15,35 +15,37 @@ const Footer = () => {
       )}
     >
       <div className=" space-y-5 md:space-y-10 lg:space-y-10">
-        <h1 className="text-white text-lg md:text-2xl lg:text-2xl font-semibold">
+        <h1 className="text-white text-md md:text-2xl lg:text-2xl font-semibold">
           IBEC Consulting <br /> Private Limited
         </h1>
         <div className="space-y-1">
-          <h2 className="text-white text-lg md:text-2xl lg:text-2xl font-semibold">
+          <h2 className="text-white text-md md:text-2xl lg:text-2xl font-semibold">
             Registered Office
           </h2>
-          <p className="text-white text-md">
+          <p className="text-white text-xs lg:text-md md:text-md">
             C-539, SFS Flats, Sheikh Sarai Phase I, South <br /> Delhi, New
             Delhi-110017, India
           </p>
         </div>
       </div>
-      <div className="space-y-5 w-full flex justify-end flex-col items-end">
+      <div className="space-y-5 w-full flex justify-end flex-col md:items-end lg:items-end">
         <div className="space-y-5 md:space-y-10 lg:space-y-10">
           <div className="space-y-1">
-            <h2 className="text-white text-lg md:text-2xl lg:text-2xl font-semibold">
+            <h2 className="text-white text-md md:text-2xl lg:text-2xl font-semibold">
               Corporate Office
             </h2>
-            <p className="text-white text-md">
+            <p className="text-white text-xs lg:text-md md:text-md">
               6 Rushabh Complex, Dalia Industrial Estate, Off <br /> New Link
               Road, Andheri West, Mumbai 400053
             </p>
           </div>
-          <div className="space-y-1">
-            <h2 className="text-white text-lg md:text-2xl lg:text-2xl font-semibold">
+          <div className="space-y-0.5">
+            <h2 className="text-white text-md md:text-2xl lg:text-2xl font-semibold">
               CIN
             </h2>
-            <p className="text-white text-md">U74140DL2020PTC362323</p>
+            <p className="text-white text-xs lg:text-md md:text-md">
+              U74140DL2020PTC362323
+            </p>
           </div>
         </div>
       </div>

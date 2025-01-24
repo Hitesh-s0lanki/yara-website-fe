@@ -58,7 +58,7 @@ const data = [
 
 const WhyChooseYara = () => {
   return (
-    <div className="w-full py-20 px-5 md:px-56 lg:px-56 bg-[#FFF0F0] flex flex-col gap-8 md:gap-16 lg:gap-16 justify-center items-center">
+    <div className="w-full py-10 md:py-20 lg:py-20 px-5 md:px-56 lg:px-56 bg-[#FFF0F0] flex flex-col gap-8 md:gap-16 lg:gap-16 justify-center items-center">
       <h1
         className={cn(
           "text-4xl md:text-5xl lg:text-5xl text-center",

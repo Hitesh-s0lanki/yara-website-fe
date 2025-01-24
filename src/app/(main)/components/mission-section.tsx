@@ -32,7 +32,7 @@ const values = [
 
 const MissionSection = () => {
   return (
-    <div className="w-full  py-20 px-5 md:px-40 lg:px-40 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 md:gap-20 lg:gap-20">
+    <div className="w-full  py-10 md:py-20 lg:py-20 px-5 md:px-40 lg:px-40 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 md:gap-20 lg:gap-20">
       <div className="w-full">
         <h2
           className={cn(

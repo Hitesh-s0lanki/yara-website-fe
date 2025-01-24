@@ -15,7 +15,7 @@ const montserrat = Montserrat({
 
 const PartnerSection = () => {
   return (
-    <div className=" w-full px-5 md:px-40 lg:px-40 py-20 grid gap-10 md:gap-5 lg:gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+    <div className=" w-full px-5 md:px-40 lg:px-40 py-10 md:py-20 lg:py-20 grid gap-10 md:gap-5 lg:gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
       <div className=" w-full flex flex-col justify-center items-center gap-5">
         <h2
           className={cn(
@@ -38,11 +38,16 @@ const PartnerSection = () => {
       <div className="p-8 border rounded-xl shadow-sm border-[#FFDFE4] shadow-[#FFDFE4]">
         <Image src="/partners.svg" alt="Partners" height={50} width={50} />
         <h2
-          className={cn(" text-2xl font-semibold mt-2", montserrat.className)}
+          className={cn(
+            " text-xl md:text-2xl lg:text-2xl font-semibold mt-2",
+            montserrat.className
+          )}
         >
           Partners/Customers
         </h2>
-        <p className={cn(" text-md", montserrat.className)}>
+        <p
+          className={cn(" text-sm lg:text-md md:text-md", montserrat.className)}
+        >
           {"Let’s create something amazing together!"}
           <br /> Get in touch with{" "}
         </p>

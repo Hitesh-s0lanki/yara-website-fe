@@ -18,7 +18,8 @@ const QuoteSection = () => {
       <Image src={"/quote.svg"} alt="quote" height={30} width={30} />
       <h3 className=" text-xl md:text-2xl lg:text-2xl text-center">
         To satisfy not only her needs but also her desires for betterment by
-        creating a women-centric space for <br /> unfiltered expression, choice,
+        creating a women-centric space for{" "}
+        <br className="hidden md:flex lg:flex" /> unfiltered expression, choice,
         and empowerment.
       </h3>
     </div>

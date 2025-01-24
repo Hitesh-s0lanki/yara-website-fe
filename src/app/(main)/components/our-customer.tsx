@@ -41,7 +41,7 @@ const data = [
 
 const OurCustomer = () => {
   return (
-    <div className="w-full py-20 px-5 flex flex-col justify-center items-center gap-10 md:gap-20 lg:gap-20">
+    <div className="w-full py-10 md:py-20 lg:py-20 px-5 flex flex-col justify-center items-center gap-10 md:gap-20 lg:gap-20">
       <h1
         className={cn(
           "text-4xl md:text-5xl lg:text-5xl text-center",

@@ -15,7 +15,7 @@ const montserrat = Montserrat({
 
 const Team = () => {
   return (
-    <div className=" w-full bg-[#FFF0F0] px-5 md:px-40 lg:px-40  py-20 flex flex-col gap-8 justify-center items-center">
+    <div className=" w-full bg-[#FFF0F0] px-5 md:px-40 lg:px-40  py-10 md:py-20 lg:py-20 flex flex-col gap-8 justify-center items-center">
       <h1
         className={cn(
           "text-4xl md:text-5xl lg:text-5xl text-center",
