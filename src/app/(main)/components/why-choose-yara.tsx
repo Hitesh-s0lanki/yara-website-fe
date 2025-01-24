@@ -58,7 +58,7 @@ const data = [
 
 const WhyChooseYara = () => {
   return (
-    <div className="w-full py-20 px-5 md:px-56 lg:px-56 bg-[#FFF0F0] flex flex-col gap-16 justify-center items-center">
+    <div className="w-full py-20 px-5 md:px-56 lg:px-56 bg-[#FFF0F0] flex flex-col gap-8 md:gap-16 lg:gap-16 justify-center items-center">
       <h1
         className={cn(
           "text-4xl md:text-5xl lg:text-5xl text-center",
@@ -95,12 +95,12 @@ const ImageCard = ({
   return (
     <div
       className={cn(
-        "box w-full min-w-[326px] md:min-w-[30px] lg:min-w-[30px] h-[228px] md:h-[300px] lg:h-[300px] rounded-xl zoom-in group",
+        "box w-full min-w-[300px] md:min-w-[30px] lg:min-w-[30px] h-[200px] md:h-[300px] lg:h-[300px] rounded-xl zoom-in group",
         colspan ? "col-span-2" : ""
       )}
     >
       <div
-        className="absolute min-w-[326px] md:min-w-[30px] lg:min-w-[30px] h-[228px] md:h-[300px] lg:h-[300px] w-full flex flex-col gap-1 justify-end text-center p-5  rounded-xl z-[99999] transition-all duration-1000 ease-in-out"
+        className="absolute min-w-[300px] md:min-w-[30px] lg:min-w-[30px] h-[200px] md:h-[300px] lg:h-[300px] w-full flex flex-col gap-0.5 justify-end text-center p-5  rounded-xl z-[99999] transition-all duration-1000 ease-in-out"
         style={{
           background:
             "linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1))",
@@ -117,7 +117,7 @@ const ImageCard = ({
         </h2>
         <p
           className={cn(
-            "text-white text-sm md:text-md lg:text-md text-start md:hidden lg:hidden md:group-hover:flex lg:group-hover:flex md:opacity-0 lg:opacity-0 md:translate-y-5 lg:translate-y-5 group-hover:opacity-100 group-hover:translate-y-0 group-hover:transition-all group-hover:ease-in-out",
+            "text-white text-xs md:text-md lg:text-md text-start md:hidden lg:hidden md:group-hover:flex lg:group-hover:flex md:opacity-0 lg:opacity-0 md:translate-y-5 lg:translate-y-5 group-hover:opacity-100 group-hover:translate-y-0 group-hover:transition-all group-hover:ease-in-out",
             colspan ? "md:pr-10 lg:pr-10" : ""
           )}
           style={{ transitionDuration: "3000ms" }}
@@ -130,7 +130,7 @@ const ImageCard = ({
         alt="Bright and Spacious Stores"
         width={300}
         height={180}
-        className=" w-full min-w-[326px] md:min-w-[30px] lg:min-w-[30px] h-[228px] md:h-[300px] lg:h-[300px] object-center object-cover rounded-xl shadow-sm img"
+        className=" w-full min-w-[300px] md:min-w-[30px] lg:min-w-[30px] h-[200px] md:h-[300px] lg:h-[300px] object-center object-cover rounded-xl shadow-sm img"
       />
     </div>
   );

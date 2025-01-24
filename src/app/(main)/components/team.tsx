@@ -48,10 +48,10 @@ const Team = () => {
           />
           <div className=" py-1 flex flex-col justify-between">
             <div className="flex flex-col">
-              <h2 className=" text-lg md:text-xl lg:text-xl font-semibold">
+              <h2 className=" text-md md:text-xl lg:text-xl font-semibold">
                 Geeta Mahadevan
               </h2>
-              <p className=" text-sm md:text-lg lg:text-lg">CEO</p>
+              <p className=" text-xs md:text-lg lg:text-lg">CEO</p>
             </div>
             <div className="flex gap-2 flex-wrap">
               <Link href={"/"}>
@@ -60,6 +60,7 @@ const Team = () => {
                   alt="Aditya"
                   height={35}
                   width={35}
+                  className="h-[30px] w-[30px] md:h-[35px] lg:h-[35px] md:w-[35px] lg:w-[35px]"
                 />
               </Link>
               <Link href={"/"}>
@@ -68,6 +69,7 @@ const Team = () => {
                   alt="Aditya"
                   height={35}
                   width={35}
+                  className="h-[30px] w-[30px] md:h-[35px] lg:h-[35px] md:w-[35px] lg:w-[35px]"
                 />
               </Link>
               <Link href={"/"}>
@@ -76,6 +78,7 @@ const Team = () => {
                   alt="Aditya"
                   height={35}
                   width={35}
+                  className="h-[30px] w-[30px] md:h-[35px] lg:h-[35px] md:w-[35px] lg:w-[35px]"
                 />
               </Link>
             </div>
@@ -91,64 +94,72 @@ const Team = () => {
           />
           <div className=" py-1 flex flex-col justify-between">
             <div className="flex flex-col">
-              <h2 className=" text-lg md:text-xl lg:text-xl  font-semibold">
+              <h2 className=" text-md md:text-xl lg:text-xl  font-semibold">
                 Richa Mittal
               </h2>
-              <p className=" text-sm md:text-lg lg:text-lg">
+              <p className=" text-xs md:text-lg lg:text-lg">
                 EIR - Merchandising
               </p>
             </div>
-            <div className="flex gap-2 flex-wrap">
-              <Link href={"/"}>
-                <Image
-                  src={"/team/enamor.svg"}
-                  alt="Aditya"
-                  height={35}
-                  width={35}
-                />
-              </Link>
-              <Link href={"/"}>
-                <Image
-                  src={"/team/ss.svg"}
-                  alt="Aditya"
-                  height={35}
-                  width={35}
-                />
-              </Link>
-              <Link href={"/"}>
-                <Image
-                  src={"/team/vnh.svg"}
-                  alt="Aditya"
-                  height={35}
-                  width={35}
-                />
-              </Link>
-            </div>
-            <div className="flex gap-2 flex-wrap">
-              <Link href={"/"}>
-                <Image
-                  src={"/team/c.svg"}
-                  alt="Aditya"
-                  height={35}
-                  width={35}
-                />
-              </Link>
-              <Link href={"/"}>
-                <Image
-                  src={"/team/shield.svg"}
-                  alt="Aditya"
-                  height={35}
-                  width={35}
-                />
-              </Link>
-              <Link href={"/"}>
-                <Image
-                  src={"/team/nift.svg"}
-                  alt="Aditya"
-                  height={35}
-                  width={35}
-                />
-              </Link>
+            <div className="flex flex-col gap-2 flex-wrap">
+              <div className="flex gap-2 flex-wrap">
+                <Link href={"/"}>
+                  <Image
+                    src={"/team/enamor.svg"}
+                    alt="Aditya"
+                    height={35}
+                    width={35}
+                    className="h-[30px] w-[30px] md:h-[35px] lg:h-[35px] md:w-[35px] lg:w-[35px]"
+                  />
+                </Link>
+                <Link href={"/"}>
+                  <Image
+                    src={"/team/ss.svg"}
+                    alt="Aditya"
+                    height={35}
+                    width={35}
+                    className="h-[30px] w-[30px] md:h-[35px] lg:h-[35px] md:w-[35px] lg:w-[35px]"
+                  />
+                </Link>
+                <Link href={"/"}>
+                  <Image
+                    src={"/team/vnh.svg"}
+                    alt="Aditya"
+                    height={35}
+                    width={35}
+                    className="h-[30px] w-[30px] md:h-[35px] lg:h-[35px] md:w-[35px] lg:w-[35px]"
+                  />
+                </Link>
+              </div>
+              <div className="flex gap-2 flex-wrap">
+                <Link href={"/"}>
+                  <Image
+                    src={"/team/c.svg"}
+                    alt="Aditya"
+                    height={35}
+                    width={35}
+                    className="h-[30px] w-[30px] md:h-[35px] lg:h-[35px] md:w-[35px] lg:w-[35px]"
+                  />
+                </Link>
+                <Link href={"/"}>
+                  <Image
+                    src={"/team/shield.svg"}
+                    alt="Aditya"
+                    height={35}
+                    width={35}
+                    className="h-[30px] w-[30px] md:h-[35px] lg:h-[35px] md:w-[35px] lg:w-[35px]"
+                  />
+                </Link>
+                <Link href={"/"}>
+                  <Image
+                    src={"/team/nift.svg"}
+                    alt="Aditya"
+                    height={35}
+                    width={35}
+                    className="h-[30px] w-[30px] md:h-[35px] lg:h-[35px] md:w-[35px] lg:w-[35px]"
+                  />
+                </Link>
+              </div>
             </div>
           </div>
         </div>

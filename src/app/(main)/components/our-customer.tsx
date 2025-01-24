@@ -1,10 +1,15 @@
 import { cn } from "@/lib/utils";
-import { Beau_Rivage } from "next/font/google";
+import { Beau_Rivage, Montserrat } from "next/font/google";
 import Image from "next/image";
 
 const beauRivage = Beau_Rivage({
   weight: "400", // Adjust if more weights are available
   subsets: ["latin"], // Specify subsets if needed
+});
+
+const montserrat = Montserrat({
+  weight: ["400", "700"],
+  subsets: ["latin"],
 });
 
 const data = [
@@ -64,9 +69,9 @@ const ImageCard = ({
   image: string;
 }) => {
   return (
-    <div className=" h-[244px] md:h-[400px] lg:h-[400px] w-full md:w-[223px] lg:w-[223px] relative group md:hover:w-[466px] lg:hover:w-[466px] transition-all duration-1000 ">
+    <div className=" h-[244px] md:h-[400px] lg:h-[400px] w-full md:w-[223px] lg:w-[223px] relative group md:hover:w-[466px] lg:hover:w-[466px] transition-all duration-1000">
       <div
-        className="absolute h-[244px] md:h-[400px] lg:h-[400px] w-full flex flex-col gap-1 justify-end text-center p-5  rounded-xl z-[99999] transition-all duration-1000 ease-in-out"
+        className="absolute h-[244px] md:h-[400px] lg:h-[400px] w-full flex flex-col gap-1 justify-end text-center p-4 md:p-5 lg:p-5  rounded-xl z-[99999] transition-all duration-1000 ease-in-out"
         style={{
           background:
             "linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1))",
@@ -74,14 +79,16 @@ const ImageCard = ({
       >
         <h2
           className={cn(
-            " absolute text-white text-start text-md md:text-lg lg:text-lg  font-semibold translate-y-0 lg:group-hover:translate-y-[-50px] md:lg:group-hover:translate-y-[-50px] transition-transform ease-in-out"
+            " absolute text-white text-start text-md md:text-lg lg:text-lg  font-semibold translate-y-0 lg:group-hover:translate-y-[-50px] md:lg:group-hover:translate-y-[-50px] transition-transform ease-in-out pr-12 md:pr-0 lg:pr-0",
+            montserrat.className
           )}
         >
           {title}
         </h2>
         <p
           className={cn(
-            "text-white text-md text-start opacity-0 translate-y-5 md:group-hover:opacity-100 lg:group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-1000 ease-in-out"
+            "text-white text-md text-start opacity-0 translate-y-5 md:group-hover:opacity-100 lg:group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-1000 ease-in-out",
+            montserrat.className
           )}
           style={{ transitionDuration: "3000ms" }}
         >
