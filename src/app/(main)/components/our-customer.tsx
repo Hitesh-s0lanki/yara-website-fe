@@ -79,7 +79,7 @@ const ImageCard = ({
       >
         <h2
           className={cn(
-            " absolute text-white text-start text-md md:text-lg lg:text-lg  font-semibold translate-y-0 lg:group-hover:translate-y-[-50px] md:lg:group-hover:translate-y-[-50px] transition-transform ease-in-out pr-12 md:pr-0 lg:pr-0",
+            " text-white text-start text-md md:text-lg lg:text-lg  font-semibold translate-y-0 transition-transform ease-in-out pr-12 md:pr-5 lg:pr-5",
             montserrat.className
           )}
         >
@@ -87,10 +87,13 @@ const ImageCard = ({
         </h2>
         <p
           className={cn(
-            "text-white text-md text-start opacity-0 translate-y-5 md:group-hover:opacity-100 lg:group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-1000 ease-in-out",
+            "text-white text-xs md:text-sm lg:text-sm text-start hidden md:group-hover:flex lg:group-hover:flex opacity-0 translate-y-5 group-hover:opacity-100 group-hover:translate-y-0 group-hover:transition-all group-hover:fade-in-100 md:hover:min-w-[400px] min-w-[400px]",
             montserrat.className
           )}
-          style={{ transitionDuration: "3000ms" }}
+          style={{
+            transitionDuration: "1000ms", // The actual animation duration (1s)
+            animationDelay: "1000ms",
+          }}
         >
           {description}
         </p>

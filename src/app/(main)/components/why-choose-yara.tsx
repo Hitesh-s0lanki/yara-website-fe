@@ -109,18 +109,15 @@ const ImageCard = ({
         <h2
           className={cn(
             " text-white text-start text-md md:text-lg lg:text-lg font-semibold translate-y-0 duration-1000 ease-in-out transition-all"
-            // title === "All-Women Team" && "group-hover:translate-y-[-75px]",
-            // title === "Privacy First" && "group-hover:translate-y-[-25px]"
           )}
         >
           {title}
         </h2>
         <p
           className={cn(
-            "text-white text-xs md:text-md lg:text-md text-start md:hidden lg:hidden md:group-hover:flex lg:group-hover:flex md:opacity-0 lg:opacity-0 md:translate-y-5 lg:translate-y-5 group-hover:opacity-100 group-hover:translate-y-0 group-hover:transition-all group-hover:ease-in-out",
+            "text-white text-xs md:text-lg lg:text-lg text-start md:hidden lg:hidden md:group-hover:flex lg:group-hover:flex md:opacity-0 lg:opacity-0 md:translate-y-5 lg:translate-y-5 group-hover:opacity-100 group-hover:translate-y-0 group-hover:transition-all group-hover:ease-in-out",
             colspan ? "md:pr-10 lg:pr-10" : ""
           )}
-          style={{ transitionDuration: "3000ms" }}
         >
           {description}
         </p>
